@@ -7,12 +7,12 @@
   <style>
     :root {
       color-scheme: light;
-      --green: #087b58;
-      --deep-green: #063d31;
-      --lime: #c9f269;
-      --ink: #14251f;
-      --muted: #65736d;
-      --paper: #f7f8f3;
+      --blue: #2563eb;
+      --deep-blue: #102e66;
+      --sky: #bfdbfe;
+      --ink: #17243a;
+      --muted: #657184;
+      --paper: #f7f9fc;
     }
 
     * { box-sizing: border-box; }
@@ -41,7 +41,7 @@
       display: inline-flex;
       align-items: center;
       gap: .7rem;
-      color: var(--deep-green);
+      color: var(--deep-blue);
       font-size: 1.15rem;
       font-weight: 800;
       letter-spacing: -.04em;
@@ -53,28 +53,28 @@
       height: 40px;
       place-items: center;
       border-radius: 13px;
-      color: var(--deep-green);
-      background: var(--lime);
+      color: var(--deep-blue);
+      background: var(--sky);
       font-size: 1.35rem;
     }
 
     nav { display: flex; align-items: center; gap: 1.8rem; }
     nav a { color: #45544e; font-size: .92rem; font-weight: 600; }
-    nav a:hover { color: var(--green); }
+    nav a:hover { color: var(--blue); }
 
     .button {
       display: inline-block;
       padding: .85rem 1.25rem;
       border-radius: 999px;
       color: white;
-      background: var(--green);
+      background: var(--blue);
       font-size: .92rem;
       font-weight: 700;
       transition: background .2s, transform .2s;
     }
 
-    .button:hover { background: var(--deep-green); transform: translateY(-2px); }
-    .button.light { color: var(--deep-green); background: white; }
+    .button:hover { background: var(--deep-blue); transform: translateY(-2px); }
+    .button.light { color: var(--deep-blue); background: white; }
 
     .hero {
       position: relative;
@@ -84,8 +84,8 @@
       align-items: center;
       color: white;
       background:
-        linear-gradient(90deg, rgba(4, 39, 31, .94) 0%, rgba(4, 39, 31, .76) 47%, rgba(4, 39, 31, .12) 100%),
-        radial-gradient(ellipse at 78% 70%, #9bc847 0%, #438a50 28%, #146346 56%, #063d31 82%);
+        linear-gradient(90deg, rgba(7, 25, 62, .94) 0%, rgba(7, 25, 62, .76) 47%, rgba(7, 25, 62, .12) 100%),
+        radial-gradient(ellipse at 78% 70%, #60a5fa 0%, #3b82f6 28%, #1d4ed8 56%, #102e66 82%);
     }
 
     .hero::after {
@@ -110,7 +110,7 @@
 
     .eyebrow {
       margin: 0 0 1rem;
-      color: var(--lime);
+      color: var(--sky);
       font-size: .78rem;
       font-weight: 800;
       letter-spacing: .18em;
@@ -128,12 +128,12 @@
     .hero-copy {
       max-width: 500px;
       margin: 1.5rem 0 2rem;
-      color: #e0e9e3;
+      color: #e0e8f5;
       font-size: 1.08rem;
     }
 
     .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
-    .hero-note { color: #e0e9e3; font-size: .9rem; }
+    .hero-note { color: #e0e8f5; font-size: .9rem; }
 
     .stats {
       display: grid;
@@ -145,11 +145,11 @@
 
     .stat {
       padding-left: 1rem;
-      border-left: 2px solid rgba(201, 242, 105, .8);
+      border-left: 2px solid rgba(191, 219, 254, .8);
     }
 
     .stat strong { display: block; font-size: 1.55rem; line-height: 1.2; }
-    .stat span { color: #d3dfd7; font-size: .83rem; }
+    .stat span { color: #d5e1f2; font-size: .83rem; }
 
     section { padding: 5rem 2rem; }
     .section-inner { max-width: 1100px; margin: auto; }
@@ -164,7 +164,7 @@
 
     .section-heading h2 {
       margin: 0;
-      color: var(--deep-green);
+      color: var(--deep-blue);
       font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.1;
       letter-spacing: -.05em;
@@ -192,7 +192,7 @@
 
     .sport-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px #183d2912; }
     .sport-icon { font-size: 2rem; }
-    .sport-card h3 { margin: 1.1rem 0 .2rem; color: var(--deep-green); font-size: 1.15rem; }
+    .sport-card h3 { margin: 1.1rem 0 .2rem; color: var(--deep-blue); font-size: 1.15rem; }
     .sport-card p { margin: 0; color: var(--muted); font-size: .9rem; }
 
     .join {
@@ -207,7 +207,7 @@
       padding: 3rem;
       border-radius: 24px;
       color: white;
-      background: var(--deep-green);
+      background: var(--deep-blue);
     }
 
     .join-panel h2 {
@@ -217,7 +217,7 @@
       letter-spacing: -.04em;
     }
 
-    .join-panel p { max-width: 550px; margin: 0; color: #d2e0d7; }
+    .join-panel p { max-width: 550px; margin: 0; color: #d3def0; }
 
     footer {
       display: flex;
@@ -291,7 +291,7 @@
       <div class="section-inner">
         <div class="section-heading">
           <div>
-            <p class="eyebrow" style="color: var(--green);">Pick your passion</p>
+            <p class="eyebrow" style="color: var(--blue);">Pick your passion</p>
             <h2>There’s a place for you here.</h2>
           </div>
           <p>Try something new, sharpen your skills or simply enjoy playing with friends. Find the sport that feels like yours.</p>
